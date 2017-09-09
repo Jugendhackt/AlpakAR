@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6149E1A31F647927001C9E6A /* TextRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6149E1A21F647927001C9E6A /* TextRecognizer.swift */; };
 		80C2F930002764DB4FFA654C /* Pods_AlpakAR.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8B7CE2C24DF374866C5ADF0 /* Pods_AlpakAR.framework */; };
 		F758BA571F6434BE0095F044 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F758BA561F6434BE0095F044 /* AppDelegate.swift */; };
 		F758BA591F6434BE0095F044 /* Scene.sks in Resources */ = {isa = PBXBuildFile; fileRef = F758BA581F6434BE0095F044 /* Scene.sks */; };
@@ -15,12 +16,12 @@
 		F758BA601F6434BE0095F044 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F758BA5E1F6434BE0095F044 /* Main.storyboard */; };
 		F758BA621F6434BE0095F044 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F758BA611F6434BE0095F044 /* Assets.xcassets */; };
 		F758BA651F6434BE0095F044 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F758BA631F6434BE0095F044 /* LaunchScreen.storyboard */; };
-		F758BA6D1F6467CB0095F044 /* alpakaSuit.png in Resources */ = {isa = PBXBuildFile; fileRef = F758BA6C1F6467CA0095F044 /* alpakaSuit.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3726831295538D7F072F57F2 /* Pods-AlpakAR.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlpakAR.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AlpakAR/Pods-AlpakAR.debug.xcconfig"; sourceTree = "<group>"; };
 		4D2B850AA878C9E857A0A869 /* Pods-AlpakAR.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlpakAR.release.xcconfig"; path = "Pods/Target Support Files/Pods-AlpakAR/Pods-AlpakAR.release.xcconfig"; sourceTree = "<group>"; };
+		6149E1A21F647927001C9E6A /* TextRecognizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TextRecognizer.swift; path = ../../SocialAlpaka/SocialAlpaka/TextRecognizer.swift; sourceTree = "<group>"; };
 		C8B7CE2C24DF374866C5ADF0 /* Pods_AlpakAR.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AlpakAR.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F758BA531F6434BE0095F044 /* AlpakAR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AlpakAR.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F758BA561F6434BE0095F044 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -31,7 +32,6 @@
 		F758BA611F6434BE0095F044 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F758BA641F6434BE0095F044 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F758BA661F6434BE0095F044 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F758BA6C1F6467CA0095F044 /* alpakaSuit.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = alpakaSuit.png; path = ../../../Downloads/alpakaSuit.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,9 +87,9 @@
 				F758BA561F6434BE0095F044 /* AppDelegate.swift */,
 				F758BA581F6434BE0095F044 /* Scene.sks */,
 				F758BA5A1F6434BE0095F044 /* Scene.swift */,
+				6149E1A21F647927001C9E6A /* TextRecognizer.swift */,
 				F758BA5C1F6434BE0095F044 /* ViewController.swift */,
 				F758BA5E1F6434BE0095F044 /* Main.storyboard */,
-				F758BA6C1F6467CA0095F044 /* alpakaSuit.png */,
 				F758BA611F6434BE0095F044 /* Assets.xcassets */,
 				F758BA631F6434BE0095F044 /* LaunchScreen.storyboard */,
 				F758BA661F6434BE0095F044 /* Info.plist */,
@@ -162,7 +162,6 @@
 				F758BA651F6434BE0095F044 /* LaunchScreen.storyboard in Resources */,
 				F758BA621F6434BE0095F044 /* Assets.xcassets in Resources */,
 				F758BA601F6434BE0095F044 /* Main.storyboard in Resources */,
-				F758BA6D1F6467CB0095F044 /* alpakaSuit.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -227,6 +226,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6149E1A31F647927001C9E6A /* TextRecognizer.swift in Sources */,
 				F758BA5D1F6434BE0095F044 /* ViewController.swift in Sources */,
 				F758BA5B1F6434BE0095F044 /* Scene.swift in Sources */,
 				F758BA571F6434BE0095F044 /* AppDelegate.swift in Sources */,
