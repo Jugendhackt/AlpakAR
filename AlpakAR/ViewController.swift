@@ -14,11 +14,17 @@ class ViewController: UIViewController, ARSKViewDelegate {
     
     @IBOutlet var sceneView: ARSKView!
     
+    //Declare text recognizer
+    var textRecognizer: TextRecognizer!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         // Set the view's delegate
         sceneView.delegate = self
+        
+        //Initialize text recognizer
+        textRecognizer = TextRecognizer()
         
         // Show statistics such as fps and node count
         sceneView.showsFPS = true

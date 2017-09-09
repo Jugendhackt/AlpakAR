@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		80C2F930002764DB4FFA654C /* Pods_AlpakAR.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8B7CE2C24DF374866C5ADF0 /* Pods_AlpakAR.framework */; };
 		F758BA571F6434BE0095F044 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F758BA561F6434BE0095F044 /* AppDelegate.swift */; };
 		F758BA591F6434BE0095F044 /* Scene.sks in Resources */ = {isa = PBXBuildFile; fileRef = F758BA581F6434BE0095F044 /* Scene.sks */; };
 		F758BA5B1F6434BE0095F044 /* Scene.swift in Sources */ = {isa = PBXBuildFile; fileRef = F758BA5A1F6434BE0095F044 /* Scene.swift */; };
@@ -17,6 +18,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3726831295538D7F072F57F2 /* Pods-AlpakAR.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlpakAR.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AlpakAR/Pods-AlpakAR.debug.xcconfig"; sourceTree = "<group>"; };
+		4D2B850AA878C9E857A0A869 /* Pods-AlpakAR.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlpakAR.release.xcconfig"; path = "Pods/Target Support Files/Pods-AlpakAR/Pods-AlpakAR.release.xcconfig"; sourceTree = "<group>"; };
+		C8B7CE2C24DF374866C5ADF0 /* Pods_AlpakAR.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AlpakAR.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F758BA531F6434BE0095F044 /* AlpakAR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AlpakAR.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F758BA561F6434BE0095F044 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F758BA581F6434BE0095F044 /* Scene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Scene.sks; sourceTree = "<group>"; };
@@ -33,17 +37,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				80C2F930002764DB4FFA654C /* Pods_AlpakAR.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1F0454A3BBFD7FDEF1D81C04 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C8B7CE2C24DF374866C5ADF0 /* Pods_AlpakAR.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B2FE904BB06A6D3465F27753 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3726831295538D7F072F57F2 /* Pods-AlpakAR.debug.xcconfig */,
+				4D2B850AA878C9E857A0A869 /* Pods-AlpakAR.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		F758BA4A1F6434BE0095F044 = {
 			isa = PBXGroup;
 			children = (
 				F758BA551F6434BE0095F044 /* AlpakAR */,
 				F758BA541F6434BE0095F044 /* Products */,
+				B2FE904BB06A6D3465F27753 /* Pods */,
+				1F0454A3BBFD7FDEF1D81C04 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -77,9 +101,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F758BA691F6434BE0095F044 /* Build configuration list for PBXNativeTarget "AlpakAR" */;
 			buildPhases = (
+				77EFE2AE883D32C0CEAE4537 /* [CP] Check Pods Manifest.lock */,
 				F758BA4F1F6434BE0095F044 /* Sources */,
 				F758BA501F6434BE0095F044 /* Frameworks */,
 				F758BA511F6434BE0095F044 /* Resources */,
+				0334C45146EC194E08544220 /* [CP] Embed Pods Frameworks */,
+				067602A3437C4535262590B5 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -136,6 +163,60 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0334C45146EC194E08544220 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-AlpakAR/Pods-AlpakAR-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/TesseractOCRiOS/TesseractOCR.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TesseractOCR.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AlpakAR/Pods-AlpakAR-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		067602A3437C4535262590B5 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AlpakAR/Pods-AlpakAR-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		77EFE2AE883D32C0CEAE4537 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AlpakAR-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F758BA4F1F6434BE0095F044 /* Sources */ = {
@@ -275,13 +356,16 @@
 		};
 		F758BA6A1F6434BE0095F044 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3726831295538D7F072F57F2 /* Pods-AlpakAR.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = C5LHHD873E;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = AlpakAR/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = COD3LTA.AlpakAR;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/FelixSchlegel/Desktop/SocialAlpaka/Alpaka-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -289,13 +373,16 @@
 		};
 		F758BA6B1F6434BE0095F044 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4D2B850AA878C9E857A0A869 /* Pods-AlpakAR.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = C5LHHD873E;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = AlpakAR/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = COD3LTA.AlpakAR;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/FelixSchlegel/Desktop/SocialAlpaka/Alpaka-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -320,6 +407,7 @@
 				F758BA6B1F6434BE0095F044 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
