@@ -15,7 +15,7 @@ class ViewController: UIViewController, ARSKViewDelegate {
     @IBOutlet var sceneView: ARSKView!
     
     var textRecognizer: TextRecognizer!
-    var timer = Timer()
+//    var timer = Timer()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,9 +35,9 @@ class ViewController: UIViewController, ARSKViewDelegate {
             sceneView.presentScene(scene)
         }
         
-        scheduledTimerWithTimeInterval()
+//        scheduledTimerWithTimeInterval()
     }
-    
+    /*
     func scheduledTimerWithTimeInterval() {
         // Scheduling timer to Call the function "updateCounting" with the interval of 1 seconds
         timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(ViewController.updateCamera), userInfo: nil, repeats: true)
@@ -47,7 +47,7 @@ class ViewController: UIViewController, ARSKViewDelegate {
         pixelBufferToUIImage(pixelBuffer: (sceneView.session.currentFrame?.capturedImage)!)
         print("counting..")
     }
-    
+    */
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
@@ -75,11 +75,17 @@ class ViewController: UIViewController, ARSKViewDelegate {
     
     func view(_ view: ARSKView, nodeFor anchor: ARAnchor) -> SKNode? {
         // Create and configure a node for the anchor added to the view's session.
-//        let labelNode = SKSpriteNode
-        let labelNode = SKLabelNode(text: "Felix kann nicht coden!")
-        labelNode.horizontalAlignmentMode = .center
-        labelNode.verticalAlignmentMode = .center
-        return labelNode;
+        let rand = arc4random_uniform(_: 3)
+        switch rand {
+        case 0:
+            return SKSpriteNode(imageNamed: "icon_pixel_orange.png")
+        case 1:
+            return SKSpriteNode(imageNamed: "icon_pixel_gelb.png")
+        case 2:
+            return SKSpriteNode(imageNamed: "icon_pixel_grün.png")
+        default:
+            return SKSpriteNode(imageNamed: "alpakaSuit.png")
+            }
     }
     
     func session(_ session: ARSession, didFailWithError error: Error) {

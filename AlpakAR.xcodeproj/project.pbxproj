@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F732A4B61F64AA6E0090E00D /* alpakaSuit.png in Resources */ = {isa = PBXBuildFile; fileRef = F732A4B51F64AA6D0090E00D /* alpakaSuit.png */; };
+		F732A4B81F64ABAB0090E00D /* full_suit_grün.png in Resources */ = {isa = PBXBuildFile; fileRef = F732A4B71F64ABAB0090E00D /* full_suit_grün.png */; };
+		F732A4BA1F64ABB10090E00D /* full_suit_orange.png in Resources */ = {isa = PBXBuildFile; fileRef = F732A4B91F64ABB00090E00D /* full_suit_orange.png */; };
+		F732A4BC1F64ABB70090E00D /* icon_pixel_gelb.png in Resources */ = {isa = PBXBuildFile; fileRef = F732A4BB1F64ABB70090E00D /* icon_pixel_gelb.png */; };
+		F732A4BE1F64ABBD0090E00D /* icon_pixel_grün.png in Resources */ = {isa = PBXBuildFile; fileRef = F732A4BD1F64ABBD0090E00D /* icon_pixel_grün.png */; };
+		F732A4C01F64ABC20090E00D /* icon_pixel_orange.png in Resources */ = {isa = PBXBuildFile; fileRef = F732A4BF1F64ABC20090E00D /* icon_pixel_orange.png */; };
+		F732A4C21F64ABCD0090E00D /* full_suit.png in Resources */ = {isa = PBXBuildFile; fileRef = F732A4C11F64ABCD0090E00D /* full_suit.png */; };
 		F758BA571F6434BE0095F044 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F758BA561F6434BE0095F044 /* AppDelegate.swift */; };
 		F758BA591F6434BE0095F044 /* Scene.sks in Resources */ = {isa = PBXBuildFile; fileRef = F758BA581F6434BE0095F044 /* Scene.sks */; };
 		F758BA5B1F6434BE0095F044 /* Scene.swift in Sources */ = {isa = PBXBuildFile; fileRef = F758BA5A1F6434BE0095F044 /* Scene.swift */; };
@@ -21,6 +28,13 @@
 /* Begin PBXFileReference section */
 		3726831295538D7F072F57F2 /* Pods-AlpakAR.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlpakAR.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AlpakAR/Pods-AlpakAR.debug.xcconfig"; sourceTree = "<group>"; };
 		4D2B850AA878C9E857A0A869 /* Pods-AlpakAR.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlpakAR.release.xcconfig"; path = "Pods/Target Support Files/Pods-AlpakAR/Pods-AlpakAR.release.xcconfig"; sourceTree = "<group>"; };
+		F732A4B51F64AA6D0090E00D /* alpakaSuit.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = alpakaSuit.png; path = ../../../Downloads/alpakaSuit.png; sourceTree = "<group>"; };
+		F732A4B71F64ABAB0090E00D /* full_suit_grün.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "full_suit_grün.png"; path = "../../../Downloads/full_suit_grün.png"; sourceTree = "<group>"; };
+		F732A4B91F64ABB00090E00D /* full_suit_orange.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = full_suit_orange.png; path = ../../../Downloads/full_suit_orange.png; sourceTree = "<group>"; };
+		F732A4BB1F64ABB70090E00D /* icon_pixel_gelb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon_pixel_gelb.png; path = ../../../Downloads/icon_pixel_gelb.png; sourceTree = "<group>"; };
+		F732A4BD1F64ABBD0090E00D /* icon_pixel_grün.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon_pixel_grün.png"; path = "../../../Downloads/icon_pixel_grün.png"; sourceTree = "<group>"; };
+		F732A4BF1F64ABC20090E00D /* icon_pixel_orange.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon_pixel_orange.png; path = ../../../Downloads/icon_pixel_orange.png; sourceTree = "<group>"; };
+		F732A4C11F64ABCD0090E00D /* full_suit.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = full_suit.png; path = ../../../Downloads/full_suit.png; sourceTree = "<group>"; };
 		F758BA531F6434BE0095F044 /* AlpakAR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AlpakAR.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F758BA561F6434BE0095F044 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F758BA581F6434BE0095F044 /* Scene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Scene.sks; sourceTree = "<group>"; };
@@ -90,7 +104,14 @@
 				F758BA581F6434BE0095F044 /* Scene.sks */,
 				F758BA5A1F6434BE0095F044 /* Scene.swift */,
 				F7F3A0951F648EFA00B79DF1 /* TextRecognizer.swift */,
+				F732A4B71F64ABAB0090E00D /* full_suit_grün.png */,
+				F732A4B91F64ABB00090E00D /* full_suit_orange.png */,
+				F732A4BB1F64ABB70090E00D /* icon_pixel_gelb.png */,
+				F732A4BF1F64ABC20090E00D /* icon_pixel_orange.png */,
+				F732A4BD1F64ABBD0090E00D /* icon_pixel_grün.png */,
+				F732A4C11F64ABCD0090E00D /* full_suit.png */,
 				F758BA5C1F6434BE0095F044 /* ViewController.swift */,
+				F732A4B51F64AA6D0090E00D /* alpakaSuit.png */,
 				F758BA5E1F6434BE0095F044 /* Main.storyboard */,
 				F758BA611F6434BE0095F044 /* Assets.xcassets */,
 				F758BA631F6434BE0095F044 /* LaunchScreen.storyboard */,
@@ -161,9 +182,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				F758BA591F6434BE0095F044 /* Scene.sks in Resources */,
+				F732A4C21F64ABCD0090E00D /* full_suit.png in Resources */,
+				F732A4BC1F64ABB70090E00D /* icon_pixel_gelb.png in Resources */,
 				F758BA651F6434BE0095F044 /* LaunchScreen.storyboard in Resources */,
+				F732A4B81F64ABAB0090E00D /* full_suit_grün.png in Resources */,
 				F758BA621F6434BE0095F044 /* Assets.xcassets in Resources */,
+				F732A4BA1F64ABB10090E00D /* full_suit_orange.png in Resources */,
+				F732A4B61F64AA6E0090E00D /* alpakaSuit.png in Resources */,
+				F732A4C01F64ABC20090E00D /* icon_pixel_orange.png in Resources */,
 				F758BA601F6434BE0095F044 /* Main.storyboard in Resources */,
+				F732A4BE1F64ABBD0090E00D /* icon_pixel_grün.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
