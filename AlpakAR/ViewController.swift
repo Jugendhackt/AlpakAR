@@ -14,6 +14,8 @@ class ViewController: UIViewController, ARSKViewDelegate {
     
     @IBOutlet var sceneView: ARSKView!
     
+    var timer = Timer()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -28,6 +30,18 @@ class ViewController: UIViewController, ARSKViewDelegate {
         if let scene = SKScene(fileNamed: "Scene") {
             sceneView.presentScene(scene)
         }
+        
+        scheduledTimerWithTimeInterval()
+    }
+    
+    func scheduledTimerWithTimeInterval() {
+        // Scheduling timer to Call the function "updateCounting" with the interval of 1 seconds
+        timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(ViewController.updateCamera), userInfo: nil, repeats: true)
+    }
+    
+    @objc func updateCamera(){
+        pixelBufferToUIImage(pixelBuffer: (sceneView.session.currentFrame?.capturedImage)!)
+        print("counting..")
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -39,6 +53,7 @@ class ViewController: UIViewController, ARSKViewDelegate {
         // Run the view's session
         sceneView.session.run(configuration)
     }
+    
     
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
@@ -56,7 +71,8 @@ class ViewController: UIViewController, ARSKViewDelegate {
     
     func view(_ view: ARSKView, nodeFor anchor: ARAnchor) -> SKNode? {
         // Create and configure a node for the anchor added to the view's session.
-        let labelNode = SKLabelNode(text: "👾")
+//        let labelNode = SKSpriteNode
+        let labelNode = SKLabelNode(text: "Felix kann nicht coden!")
         labelNode.horizontalAlignmentMode = .center
         labelNode.verticalAlignmentMode = .center
         return labelNode;
@@ -76,4 +92,13 @@ class ViewController: UIViewController, ARSKViewDelegate {
         // Reset tracking and/or remove existing anchors if consistent tracking is required
         
     }
+    
+    func pixelBufferToUIImage(pixelBuffer: CVPixelBuffer) -> UIImage {
+        let ciImage = CIImage(cvPixelBuffer: pixelBuffer)
+        let context = CIContext(options: nil)
+        let cgImage = context.createCGImage(ciImage, from: ciImage.extent)
+        let uiImage = UIImage(cgImage: cgImage!)
+        return uiImage
+    }
+    
 }

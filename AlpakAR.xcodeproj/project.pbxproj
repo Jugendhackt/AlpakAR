@@ -14,6 +14,7 @@
 		F758BA601F6434BE0095F044 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F758BA5E1F6434BE0095F044 /* Main.storyboard */; };
 		F758BA621F6434BE0095F044 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F758BA611F6434BE0095F044 /* Assets.xcassets */; };
 		F758BA651F6434BE0095F044 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F758BA631F6434BE0095F044 /* LaunchScreen.storyboard */; };
+		F758BA6D1F6467CB0095F044 /* alpakaSuit.png in Resources */ = {isa = PBXBuildFile; fileRef = F758BA6C1F6467CA0095F044 /* alpakaSuit.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		F758BA611F6434BE0095F044 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F758BA641F6434BE0095F044 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F758BA661F6434BE0095F044 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F758BA6C1F6467CA0095F044 /* alpakaSuit.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = alpakaSuit.png; path = ../../../Downloads/alpakaSuit.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				F758BA5A1F6434BE0095F044 /* Scene.swift */,
 				F758BA5C1F6434BE0095F044 /* ViewController.swift */,
 				F758BA5E1F6434BE0095F044 /* Main.storyboard */,
+				F758BA6C1F6467CA0095F044 /* alpakaSuit.png */,
 				F758BA611F6434BE0095F044 /* Assets.xcassets */,
 				F758BA631F6434BE0095F044 /* LaunchScreen.storyboard */,
 				F758BA661F6434BE0095F044 /* Info.plist */,
@@ -132,6 +135,7 @@
 				F758BA651F6434BE0095F044 /* LaunchScreen.storyboard in Resources */,
 				F758BA621F6434BE0095F044 /* Assets.xcassets in Resources */,
 				F758BA601F6434BE0095F044 /* Main.storyboard in Resources */,
+				F758BA6D1F6467CB0095F044 /* alpakaSuit.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
